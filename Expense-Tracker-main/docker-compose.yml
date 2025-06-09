@@ -1,0 +1,30 @@
+services:
+  backend:
+    build: .
+    ports:
+      - "3001:3000"
+    depends_on:
+      - mongo
+    networks:
+      - expense-network
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/expense-tracker
+      - PORT=3000
+      - STOCKS_API_KEY=d242e403e6f64c17a0fdef3e2ca116d7
+
+  mongo:
+    image: mongo:6
+    container_name: mongodb
+    ports:
+      - "27018:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - expense-network
+
+networks:
+  expense-network:
+    driver: bridge
+
+volumes:
+  mongo-data:

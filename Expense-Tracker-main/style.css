@@ -1,0 +1,103 @@
+body {
+    scroll-behavior: smooth;
+}
+.landing-bg {
+  background-image: url("./assests/dashboard.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.blur-overlay {
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px); /* Adjust blur level as needed */
+  background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent overlay */
+}
+
+.chart-container {
+  height: 300px;
+  width: 300px;
+  margin: auto;
+}
+
+.expense-item {
+  background-color: #2d3748; /* Dark gray background */
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #e2e8f0; /* Light text color */
+  transition: background-color 0.3s ease;
+}
+
+.expense-item:hover {
+  background-color: #4a5568; /* Slightly lighter gray on hover */
+}
+
+.expense-category{
+  font-weight: bold;
+  color: #ed7c63; /* Light blue color */
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #e53e3e; /* Red color for delete button */
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 4px 8px;
+  transition: color 0.3s ease;
+}
+
+.delete-btn:hover {
+  color: #f56565; /* Lighter red on hover */
+}
+
+#budget .add-income {
+  margin-top: 2rem;
+}
+
+#budget .add-income h3 {
+  color: #ecc94b; /* Yellow shade for header */
+}
+
+#budget .add-income input,
+#budget .add-income button {
+  margin-top: 0.5rem;
+}
+
+.income-item {
+  background-color: #2d3748; /* Dark gray background */
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #e2e8f0; /* Light text color */
+  transition: background-color 0.3s ease;
+}
+
+.income-item:hover {
+  background-color: #4a5568; /* Slightly lighter gray on hover */
+}
+
+.income-category {
+  font-weight: bold;
+  color: #63edaa;
+}
+
+.delete-income-btn {
+  background: none;
+  border: none;
+  color: #e53e3e; /* Red color for delete button */
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 4px 8px;
+  transition: color 0.3s ease;
+}
+
+.delete-income-btn:hover {
+  color: #f56565; /* Lighter red on hover */
+}

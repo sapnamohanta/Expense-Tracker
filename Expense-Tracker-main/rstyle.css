@@ -1,0 +1,106 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background & Centering */
+body {
+    background-color: #1a1b26; /* Tokyo Night background */
+    color: #c0caf5; /* Text */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-header {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #facc15;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Form Box */
+.form-box {
+    background-color: #24283b;
+    padding: 30px;
+    border-radius: 10px;
+    /* box-shadow: 0 0 15px rgba(93, 189, 255, 0.2); */
+}
+
+/* Heading */
+.form-box h2 {
+    margin-bottom: 20px;
+    color: #facc15;
+    text-align: center;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a1b26;
+    color: #c0caf5;
+    border: 1px solid #3b4261;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #7aa2f7;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #7aa2f7;
+    color: #1a1b26;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #9ece6a;
+}
+
+/* Link Text */
+p {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+a {
+    color: #7dcfff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
